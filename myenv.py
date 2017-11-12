@@ -9,5 +9,6 @@ load_dotenv(dotenv_path)
 
 username = os.environ.get("username")
 password = os.environ.get("password")
-httpid = os.environ.get("httpid");
-ip = os.environ.get("ip");
+httpid = os.environ.get("httpid")
+ip = os.environ.get("ip")
+redishost = os.environ.get("redishost")

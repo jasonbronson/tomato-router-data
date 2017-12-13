@@ -3,11 +3,13 @@
 
 Reads tomato router data for graphing or logging
 
+
 Feature list:
 
  * get logs
  * get bandwidth by device host
  * get device list
+ * get websearch history
 
 
 Enjoy :+1:
@@ -26,16 +28,11 @@ sudo pip install hurry.filesize
 
 Setup your own .env file 
 
-run this in the directory after you download/clone from github then edit it with your details
+Edit the envsample file and run this command
 ```
-echo "
-username=admin
-password=admin
-httpid=MY-HTTP-ID-GOES-HERE
-ip=192.168.1.1
-redishost=192.168.1.30
-" > .env
+cp envsample > .env
 ```
+
 
 #example output
 

@@ -1,4 +1,4 @@
-import re,requests,sys,MyEnv
+import re,requests,sys,myenv
 import MySQLdb as my
 #pip install mysqlclient
 

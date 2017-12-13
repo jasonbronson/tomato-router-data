@@ -2,17 +2,17 @@ import csv,re,requests,sys,MyEnv
 import MySQLdb as my
 #pip install mysqlclient
 
-url = 'http://' + MyEnv.ROUTER_IP + '/webmon_recent_domains?_http_id=' + sys.argv[1]
+url = 'http://' + myenv.ROUTER_IP + '/webmon_recent_domains?_http_id=' + myenv.HTTP_ID
 
 response = requests.get(url,
                         auth=requests.auth.HTTPBasicAuth(
-                          MyEnv.ROUTER_USERNAME,
-                          MyEnv.ROUTER_PASSWORD))
+                          myenv.ROUTER_USERNAME,
+                          myenv.ROUTER_PASSWORD))
 #print response.text
 
-db = my.connect(host=MyEnv.MYSQL_IP,
-user=MyEnv.MYSQL_USERNAME,
-passwd=MyEnv.MYSQL_PASSWORD,
+db = my.connect(host=myenv.MYSQL_IP,
+user=myenv.MYSQL_USERNAME,
+passwd=myenv.MYSQL_PASSWORD,
 db="router"
 )
 
